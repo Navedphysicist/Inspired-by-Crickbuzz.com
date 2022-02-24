@@ -1,0 +1,108 @@
+body {
+  width: 70%;
+  justify-content: center;
+  margin: auto;
+  font-family: helvetica, "Segoe UI", Arial, sans-serif;
+  background-color: rgb(227, 230, 227);
+  /* min-height: 500px; */
+}
+#container {
+  background-color: white;
+  height: 600px;
+  margin-bottom: 5px;
+}
+#nav {
+  margin-top: 10px;
+  position: relative;
+  background-color: rgb(0, 146, 112);
+  height: 48px;
+}
+#nav img {
+  margin-left: 20px;
+}
+#top {
+  display: flex;
+  border-bottom: 0.5px solid rgb(233, 227, 227);
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
+}
+.k1 {
+  margin-left: 20px;
+  padding-top: 5px;
+  outline: medium;
+}
+.k2 {
+  margin-right: 20px;
+}
+div > img {
+  height: 40px;
+  width: 101px;
+}
+div > div {
+  display: flex;
+  margin-top: 5px;
+}
+div a {
+  text-decoration: none;
+  color: grey;
+}
+#acc {
+  color: black;
+  font-weight: bolder;
+}
+.fontsize {
+  font-size: 14px;
+}
+#enterOtp {
+  display: block;
+  text-align: center;
+  line-height: 10px;
+  margin-top: 80px;
+}
+.fontsize1 {
+  font-size: 16px;
+}
+div p {
+  margin-top: -10px;
+}
+#otp {
+  justify-content: center;
+  margin: auto;
+  margin-top: 35px;
+  width: 35%;
+}
+form input {
+  width: 32px;
+  height: 31px;
+  border: 1px solid #ddd;
+  line-height: 50px;
+  text-align: center;
+  font-weight: 200;
+  margin: 0 4px;
+  border-radius: 2px;
+  outline: none;
+}
+.button {
+  margin-top: 35px;
+}
+#submit {
+  width: 31%;
+  justify-content: center;
+  margin: auto;
+  height: 40px;
+  background-color: rgb(113, 202, 182);
+  color: whitesmoke;
+  font-size: medium;
+  cursor: pointer;
+  border: 1px solid gray;
+}
+.help {
+  margin-top: 270px;
+  border: 1px solid pink;
+}
+.help a {
+  color: blue;
+  justify-content: center;
+  margin: auto;
+}
