@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+body {
+    width: 1240px;
+    height: auto;
+    background-color: #e3e6e3;
+}
+
+
+.container {
+    width: 1020px;
+    margin: auto;
+    height: auto;
+}
+
+
+
+header>.add >img{
+    width: 1020px;
+    height: 80px;
+    margin-bottom: 5px;
+}
+
+.nav>img {
+    height: 40px;
+    width: 150px;
+    cursor: pointer;
+
+}
+
+.nav {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: #009270;
+
+}
+.nav>a>img{
+margin-left: 2px;
+}
+
+.nav>a {
+    text-decoration: none;
+}
+
+.nav-item {
+    color: white;
+    margin-left: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: lighter;
+    /* border: 1px solid red; */
+}
+
+/* navbar dropdown menu  */
+
+
+
+.nav-item:hover {
+    background-color: #028062;
+}
+
+.fa-solid {
+    color: white;
+}
+
+.cricplus>button {
+    margin-left: 5px;
+    padding: 8px 14px;
+    background: #fff;
+    border-radius: 18px;
+    border: none;
+}
+
+.search {
+    margin-left: 10px;
+    padding-right: 5px;
+}
+
+/* navbar dropdown menu  */
+.rightmenu {
+    position: relative;
+    display: inline-block;
+}
+
+/* .rightmenu>.nav-item{
+margin-bottom: 50px;
+} */
+.dropdown-menu {
+    margin-top: 12px;
+    display: none;
+    position: absolute;
+    min-width: 150px;
+    z-index: 1;
+    background-color: #fff;
+
+}
+
+.dropdown-menu a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 10px 10px;
+    font-size: 14px;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f0eaea;
+    color: black;
+}
+
+.rightmenu:hover .dropdown-menu {
+    display: block;
+}
+
+/* .dropdown-menu 1 */
+.dropdown-menufirst {
+    margin-top: 12px;
+    display: none;
+    position: absolute;
+    min-width: 250px;
+    z-index: 1;
+    background-color: #fff;
+}
+
+.dropdown-menufirst a:hover {
+    background-color: #f0eaea;
+    color: black;
+}
+
+.rightmenu:hover .dropdown-menufirst {
+    display: block;
+}
+
+.dropdown-menufirst a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 10px 10px;
+    font-size: 14px;
+}
+
+.dropdown-menufirst a:last-child {
+    color: #1866db;
+}
+
+/* dropdown menu second  */
+.dropdown-menusecond {
+
+    margin-top: 12px;
+    display: none;
+    position: absolute;
+    min-width: 250px;
+    z-index: 1;
+    background-color: #fff;
+}
+
+.dropdown-menusecond a:hover {
+    background-color: #f0eaea;
+    color: black;
+}
+
+.rightmenu:hover .dropdown-menusecond {
+    display: block;
+}
+
+.dropdown-menusecond a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 10px 10px;
+    font-size: 14px;
+}
+
+.dropdown-menufirst a:last-child {
+    color: #1866db;
+}

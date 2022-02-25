@@ -1,0 +1,668 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+body {
+    width: 1240px;
+    height: auto;
+    background-color: #e3e6e3;
+}
+
+
+.container {
+    width: 1020px;
+    margin: auto;
+    height: auto;
+}
+
+
+header {
+    /* border: 2px solid red; */
+
+
+
+}
+
+header>.add >img{
+    width: 1020px;
+    height: 80px;
+    margin-bottom: 5px;
+}
+
+.nav>a>img {
+    height: 40px;
+    width: 150px;
+    cursor: pointer;
+
+}
+
+.nav {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: #009270;
+
+}
+.nav>a>img{
+margin-left: 2px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-item {
+    color: white;
+    margin-left: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: lighter;
+    /* border: 1px solid red; */
+}
+
+/* navbar dropdown menu  */
+
+
+
+.nav-item:hover {
+    background-color: #028062;
+}
+
+.fa-solid {
+    color: white;
+}
+
+.cricplus>button {
+    margin-left: 5px;
+    padding: 8px 14px;
+    background: #fff;
+    border-radius: 18px;
+    border: none;
+}
+
+.search {
+    margin-left: 10px;
+    padding-right: 5px;
+}
+
+/* navbar dropdown menu  */
+.rightmenu {
+    position: relative;
+    display: inline-block;
+}
+
+/* .rightmenu>.nav-item{
+margin-bottom: 50px;
+} */
+.dropdown-menu {
+    margin-top: 12px;
+    display: none;
+    position: absolute;
+    min-width: 150px;
+    z-index: 1;
+    background-color: #fff;
+
+}
+
+.dropdown-menu a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 10px 10px;
+    font-size: 14px;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f0eaea;
+    color: black;
+}
+
+.rightmenu:hover .dropdown-menu {
+    display: block;
+}
+
+/* .dropdown-menu 1 */
+.dropdown-menufirst {
+    margin-top: 12px;
+    display: none;
+    position: absolute;
+    min-width: 250px;
+    z-index: 1;
+    background-color: #fff;
+}
+
+.dropdown-menufirst a:hover {
+    background-color: #f0eaea;
+    color: black;
+}
+
+.rightmenu:hover .dropdown-menufirst {
+    display: block;
+}
+
+.dropdown-menufirst a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 10px 10px;
+    font-size: 14px;
+}
+
+.dropdown-menufirst a:last-child {
+    color: #1866db;
+}
+
+/* dropdown menu second  */
+.dropdown-menusecond {
+
+    margin-top: 12px;
+    display: none;
+    position: absolute;
+    min-width: 250px;
+    z-index: 1;
+    background-color: #fff;
+}
+
+.dropdown-menusecond a:hover {
+    background-color: #f0eaea;
+    color: black;
+}
+
+.rightmenu:hover .dropdown-menusecond {
+    display: block;
+}
+
+.dropdown-menusecond a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 10px 10px;
+    font-size: 14px;
+}
+
+.dropdown-menufirst a:last-child {
+    color: #1866db;
+}
+/* ----------------------------------------------- */
+/* featured div  */
+/* style  */
+
+.featured {
+    cursor: pointer;
+    width: 100%;
+    height: 140px;
+    background-color: #fff;
+    margin-top: 5px;
+}
+
+
+
+.featured>h4 {
+    padding-left: 10px;
+    padding-top: 10px;
+    color: #028062;
+    text-transform: uppercase;
+}
+
+
+.featured-items {
+    display: flex;
+    margin-top: 20px;
+   
+}
+
+.featured-items>div:last-child{
+width:30px;
+}
+.featured-items>div:last-child>img{
+margin-top: 25px;
+width:30px;
+margin-right: 8px;
+}
+
+.featured-items>div {
+
+
+   
+    width: 270px;
+    height: 80px;
+    margin-left: 20px;
+    border-right: 1px solid #e3e6e3;
+}
+
+.firstscore {
+    display: flex;
+    justify-content: space-around;
+    font-size: 12px;
+}
+
+.firstscore>p:last-child {
+    color: #666
+}
+
+.secondscore {
+    font-size: 13px;
+}
+
+.secondscore>p~p {
+    margin-top: 8px;
+}
+
+p {
+    color: black;
+    font-weight: bolder;
+    margin: 5px;
+}
+
+.last>p {
+    margin-top: 12px;
+    color: #a36501;
+    font-size: 12px;
+    font-weight: lighter;
+
+}
+
+.firstscore~p {
+    font-size: 12px;
+    margin: 5px;
+    color: #1866db;
+    font-weight: lighter;
+}
+
+/* main content css  */
+
+/* left most news section  */
+.main {
+    display: flex;
+
+}
+
+.latestnews {
+    margin-top: 5px;
+    width: 220px;
+    height: 1370px;
+    background-color: #fff;
+
+}
+
+.latestnews-section>h2 {
+    font-size: 18px;
+    width: 196px;
+    padding-left: 18px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    height: 36px;
+    color: #009270;
+    line-height: 21px;
+}
+
+.latestphotos>h2 {
+    font-size: 18px;
+    width: 196px;
+    padding-left: 18px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    height: 36px;
+    color: #009270;
+    line-height: 21px;
+}
+
+.schedule>h2 {
+    font-size: 18px;
+    width: 196px;
+    padding-left: 18px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    height: 36px;
+    color: #009270;
+    line-height: 21px;
+}
+
+.newscontent {
+    font-size: 14px;
+    padding-left: 20px;
+    line-height: 1.8;
+    padding-right: 20px;
+    padding-bottom: 5px;
+}
+
+.newscontent:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.newsduration {
+    font-size: 14px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    color: gray;
+
+}
+
+.newsduration+div {
+    background: #b3b3b3;
+    width: 80%;
+    height: 1px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.newslast {
+    margin-top: 5px;
+    color: #1866db
+}
+
+.latestphotos {
+    background: white;
+    margin-top: 5px;
+    margin-top: 5px;
+    font-size: 14px;
+    padding-left: 20px;
+    line-height: 1.8;
+    padding-right: 20px;
+    padding-bottom: 5px;
+}
+
+.image>img {
+    border-radius: 8px;
+
+}
+
+.image>img:hover {
+    transform: scale(1.05);
+    transition: all 0.4s;
+
+}
+
+.imgimformation:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.imgimformation-date {
+    font-size: 14px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    color: gray;
+}
+
+.schedule {
+    background: white;
+    margin-top: 5px;
+
+    font-size: 14px;
+    padding-left: 20px;
+    line-height: 1.8;
+    padding-right: 20px;
+    padding-bottom: 5px;
+}
+
+.scheduleimformation:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.scheduleduration {
+    font-size: 12px;
+    padding-left: 8px;
+    margin-bottom: 12px;
+    color: gray;
+}
+
+.scheduleduration+div {
+    background: #b3b3b3;
+    width: 90%;
+    height: 1px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+/* middle section  */
+.maincontent {
+    width: 470px;
+    height: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 5px;
+    background-color: #fff;
+}
+
+.card {
+    width: 420px;
+    height: auto;
+}
+
+.card>p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: normal;
+    color: gray;
+    font-size: 14px;
+}
+
+.card>img {
+    border-radius: 8px;
+}
+
+.card>h3 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.card>h3:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.blue {
+    color: #1866db;
+    width: 70%;
+    font-stretch: expanded;
+    line-height: 2.5;
+    font-weight: bolder;
+
+}
+
+.blue:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.card>div:last-child {
+    background: #b3b3b3;
+    width: 90%;
+    height: 1px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+/* middle section bottom  */
+.newsection {
+    width: 445px;
+    height: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 5px;
+    background-color: #fff;
+}
+
+.newcard>p {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: normal;
+    color: gray;
+    font-size: 13px;
+}
+
+.imageset {
+    display: flex;
+
+}
+
+.imageset~p {
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: normal;
+    color: gray;
+    font-size: 13px;
+}
+
+.imageset>img {
+    border-radius: 8px;
+}
+
+.imagesetimform>h2 {
+    font-size: 16px;
+    padding: 0 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 1.5;
+}
+
+.imagesetimform>h2:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.imagesetimform>p {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding: 0 15px;
+    font-weight: normal;
+    color: gray;
+    font-size: 14px;
+}
+
+.newcard>div:last-child {
+    background: #b3b3b3;
+    width: 90%;
+    height: 1px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+/* right side section  */
+
+.featuredvideo {
+    width: 323px;
+    height: 3600px;
+    padding-left: 15px;
+    padding-right: 5px;
+    margin-top: 5px;
+    background-color: #fff;
+}
+
+.featuredvideo>h2 {
+    font-size: 18px;
+    width: 196px;
+    padding-left: 18px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    height: 36px;
+    color: #009270;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+
+.featurematerial {}
+
+iframe {
+    border-radius: 8px;
+}
+
+.featurematerial>p:last-child {
+    padding-top: 5px;
+    padding-bottom: 15px;
+    padding: 0 15px;
+    font-weight: normal;
+    color: gray;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+iframe+p {
+    line-height: 1.8;
+    font-weight: bolder;
+}
+
+iframe+p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.featurematerial>button {
+    text-align: center;
+    padding: 5px 10px;
+    margin: 10px;
+    background-color: #188b71;
+    color: #fff;
+    border: none;
+    margin-left: 90px;
+    border-radius: 2px;
+}
+
+.specialsection {
+
+
+
+    padding-right: 10px;
+    margin-top: 5px;
+}
+
+.specialsection>h2 {
+    font-size: 18px;
+
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    height: 36px;
+    color: #009270;
+    line-height: 1.5;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.specialdiv>h3 {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.specialdiv>p {
+    padding-top: 5px;
+    padding-bottom: 15px;
+    padding: 0 15px;
+    font-weight: normal;
+    color: gray;
+    font-size: 14px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.specialdiv>h3:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.specialdiv>img {
+    width: 300px;
+    height: 170px;
+    border-radius: 8px;
+
+    cursor: pointer;
+
+}
