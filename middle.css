@@ -1,0 +1,114 @@
+ 
+        .headersahu{
+            display: none;
+            font-family: sans-serif;
+        }
+        
+        .navbarsahu{
+            font-family: sans-serif;
+            width: 1020px;
+            height: 38px;
+            background-color: #4a4a4a;
+            display: flex;
+            color: white;
+            justify-content: space-between;
+        margin: auto;
+        justify-content: center;
+            align-items: center;
+           padding-right: 3px;
+        }
+        .halfnav >div>a:hover{
+            padding: 12px 1px;
+            background-color: rgba(0, 0, 0, 0.103);
+           
+        }
+        .halfnav{
+            width:90%;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: space-around;
+            
+        }
+        .halfnav>div>a{
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .halfright{
+            padding: 15px;
+        }
+        .dropdownsahu{
+            
+         background-color: rgba(0, 0, 0, 0.103);
+            cursor: pointer;
+        }
+        /* ---------------------------------------  */
+        .navbaritem{
+            background-color: #4a4a4a;
+            margin: auto;
+            width: 1020px;
+            display: flex;justify-content: space-around;
+            line-height: 1.5;
+            
+        }.navbaritem>ul>li>div>div>div{
+            color:#808080;
+            font-size: 13px;
+          
+        }
+        .navbaritem  ul>li>div>div >span{
+            font-weight: 100;
+           color: grey;
+        }
+        .navbaritem
+        ul{
+           
+            display: block;
+        list-style-type: none;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 40px;
+        
+        }
+        .navbaritem
+        ul a {
+            text-decoration: none;
+            
+        }
+        
+        
+       
+        .navchang{ background-color:#4a4a4a;
+            display: flex;
+            /* border-top: 1px solid black; */
+            border-bottom: 1px solid black;
+            width: 1020px;
+            margin: auto;
+            padding: 10px;
+            height: 40px;
+        
+        
+        }
+        .navchang>span{
+         
+            padding-left: 20px;
+            
+        }
+        .navchang>span>a{
+            background: #333;
+        margin-right: 20px;
+        font-size: 12px;
+        padding: 5px 20px;
+        border-radius: 20px;
+        color: #fff;
+        cursor: pointer;
+        }
+        .navchang>span :hover{
+        background-color: #fff;
+        color: black;
+        }
+        .hr{width: 100%;
+            height: 5px ;
+            background-color: 1px solid black;
+           
+        }
