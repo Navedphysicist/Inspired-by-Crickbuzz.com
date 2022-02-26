@@ -1,0 +1,155 @@
+  /* Style of Upper Image part */
+  .upperimgcontainer {
+    display: flex;
+    justify-content: center;
+  }
+  .upperimgcontainer > img {
+    height: 120px;
+    width: 760px;
+  }
+  /* --------------------- */
+
+  /* big container Style tag */
+  .container {
+    /* border: 1px solid red; */
+    width: 760px;
+    margin: auto;
+    height: 500px;
+    margin-top: 10px;
+    display: flex;
+    border-radius:10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    /* ---------------------------- */
+
+    /* Left side container Style Tag */
+  }
+  .leftcont {
+    /* border: 1px solid red; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    width: 50%;
+    border-radius: 10px;
+    border-left: 8px solid #59e;
+  }
+
+  #crickimg {
+    width: 70px;
+    height: 34px;
+  }
+  /* back button tag */
+  .back {
+    display: flex;
+    justify-content: space-between;
+    cursor:pointer;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  #backbutton {
+    background-color: transparent;
+    border: 0px;
+    font-size:18px;
+    cursor:pointer;
+  }
+  /*---------------------- */
+
+  /* after back button */
+
+  .afterback {
+    margin-top: 80px;
+  }
+  #paymentptag {
+    font-size: 28px;
+    width: 70%;
+    font-family: sans-serif;
+    text-align: start;
+    margin-left: 20px;
+    font-weight: bold;
+  }
+
+  #totalpayable {
+    font-size: 16px;
+    font-family: sans-serif;
+    text-align: start;
+    margin: 0px 20px;
+  }
+  #pricevalue {
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+  #transactionid {
+    font-size: 11px;
+    color: gray;
+    font-family: sans-serif;
+    margin: 20px;
+  }
+  .lastinleft 
+  {
+    width:65%;
+    font-family: sans-serif;
+   text-align: center;
+   margin:20px;
+   margin-top:40px;
+   font-size: 12px;
+  
+   padding:20px;
+   border-radius: 10px;
+   background:#59e;
+
+  }
+  /* style of right count */
+  .rigthcont {
+    /* border: 1px solid red; */
+    
+    width: 45%;
+    border-radius: 10px;
+  
+  }
+
+  .laguagebar{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    width: 85%;
+    margin: auto;
+    margin-top: 20px;
+    font-family: sans-serif;
+    color:gray;
+    font-size: 12px;}
+
+    #selecttag{
+        border:0px;
+        color:gray;
+        cursor:pointer;
+
+    }
+    #payoptions{
+        height: 420px;
+        width:100%;
+        margin: 0px 20px ;
+        margin-top: 20px;
+        /* border:1px solid red; */
+        overflow: scroll;
+        
+      
+    }
+#maindiv{ display: flex;
+        justify-content: space-between;
+        /* border:1px solid red; */
+        width:auto;
+        cursor:pointer;
+        padding:20px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+         rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+#icon{
+   width:24px;
+   height:24px;
+}
+
+#middlediv{
+ /* border: 1px solid red; */
+          font-family: sans-serif;
+          font-size:14px;}
+  

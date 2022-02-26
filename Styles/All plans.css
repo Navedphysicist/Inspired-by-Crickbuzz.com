@@ -1,0 +1,267 @@
+body {
+    height: 100%;
+    background-color: #e3e6e3;
+    font-family: "Open Sans", sans-serif;
+  }
+
+  .container {
+    width: 980px;
+    height: 48px;
+    margin: 0 auto;
+  }
+  .secondbox {
+    height: 438px;
+    background-image: linear-gradient(180deg, #02a57f, #06b2bd);
+    align-content: center;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: -18px;
+  }
+  .thirdbox {
+    height: 280px;
+    width: 980px;
+    display: grid;
+    grid-template-rows: repeat(2, 125px);
+    grid-template-columns: repeat(3, 300px);
+    /* border: 1px solid red; */
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    
+  }
+  .exclusivedeals {
+    margin-top: 10px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: 510;
+    text-transform: uppercase;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-align: start;
+    padding-left: 5px;
+  }
+
+  #Andmany {
+    font: size 14px;
+    text-align: center;
+    color: gray;
+    line-height: 0px;
+  }
+  #selectplan {
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .yellowtag {
+    background: #ffd361;
+    padding: 3px 12px;
+    border-bottom-right-radius: 20px;
+    font-size: 10px;
+    color: #000;
+
+   
+  }
+  #afteryellowtag {
+    display: flex;
+    padding-top:10px;
+  }
+  .textbold text h1 {
+    line-height: 42px;
+  }
+  h2 {
+    padding-top: 50px;
+    font-size: 24px;
+    margin: 0;
+    line-height: 30px;
+    width: 400px;
+  }
+  .thirdboximg {
+    border-radius: 5px;
+  }
+  .datain {
+    text-align: start;
+    /* border: 1px solid red; */
+    color: gray;
+    font-size: 12px;
+    padding: 5px;
+  }
+  #secondleft {
+    /* border: 1px solid red; */
+    height: 360px;
+    width: 490px;
+  }
+
+  #secondright {
+    /* border: 1px solid teal; */
+    height: 360px;
+    width: 490px;
+    padding: 20px 0px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .plans-button {
+    width: 135.36px;
+    height: 32px;
+    padding: 8px 25px;
+    background: #fff;
+    border-radius: 18px;
+    border: 0;
+    cursor:pointer;
+  }
+  
+  #learn {
+    border:1px solid white;
+    margin-left: 10px;
+  }
+  #ele-underline {
+    font-size: 13px;
+  }
+
+  .aftersecondbox {
+    margin-top: 0px;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+  }
+
+  .aftersecondbox > h3 {
+    font-weight: bold;
+    text-align: center;
+    padding-top: 15px;
+  }
+
+  .aftersecondbox > div {
+    text-align: center;
+    font-size:14px;
+    margin-bottom:10px;
+  }
+
+  #secondleft > p,
+  h2,
+  h1,
+  #learn {
+    color: #fff;
+  }
+  
+ 
+  .thirdboxinsidefirst {
+    display: flex;
+    /* border: 1px solid red; */
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+
+  }
+
+  .unlockbuttons > .plans-button {
+    width: auto;
+  }
+  .unlockbuttons > .plans-button:nth-child(2) {
+    background-color: transparent;
+    /* border: 1px solid white; */
+  }
+
+  .logo {
+    height: 32px;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .nav {
+    height: 48px;
+    background-color: #009270;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+  }
+
+  /* styling of select plan div  */
+
+  .container_of_select_plan_div {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows:250px;
+    gap: 25px;
+    margin:auto;
+    justify-content: center;
+    /* border: 1px solid red; */
+  
+ 
+  }
+
+  #ist_of_select_plan > span:not(#cut_price) {
+    font-size: 11px;
+    padding: 5px;
+    padding-right: 15px;
+    text-transform: uppercase;
+  }
+  #cut_price {
+    text-decoration: line-through;
+    font-size: 14px;
+  }
+  #correct_price {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .insideselectplan {
+    background-color: #fff;
+    /* border: 1px solid red;; */
+    border-radius: 5px;
+    height: 100px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+   
+  }
+  .data_div_in_yellow {
+    font-size: 11.5px;
+    line-height: 200%;
+    margin-top: 25px;
+    background-color: #f5f5f5;
+    padding: 10px;
+  }
+  #thirdlastplan{
+    height: 100px;
+    padding-top: 20px;
+    box-sizing: border-box;
+  }
+  
+  #checkboxiagree{
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer;
+
+  }
+  #submit{
+    background-color:#097;
+    color:#fff;
+    height:32px;
+    border:0px;
+    width:150px;
+    padding:5px;
+    border-radius: 5px;
+    margin-bottom:50px;
+   cursor: pointer;
+  }
+  
+  #submit:hover{
+    background-color: rgb(3, 107, 85);;
+  }
+  
+  #plan1,#plan2,#plan3{
+    cursor: pointer;
+  }
+
+
+  #submitparent{
+    margin:20px;
+    text-align: center;
+  
+  }
+
+
+
