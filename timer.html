@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Styles/timer.css">
+</head>
+<body>
+    <!-- navbar -->
+    <div id="nav">
+        <img src="https://www.cricbuzz.com/images/cb_logo.svg" alt="cricbuzz">
+    </div>
+      <!-- body -->
+    <div id="container">
+        <div>
+            <div id="top">
+                <!-- kid1 -->
+                <div class="k1">
+                    <div><a class="fontsize" href="./home.html">Home ></a> </div>
+                    <div><a id="acc"  href="./index.html">Account</a></div>
+                </div>
+                <!-- kid2 -->
+                <div class="k2">
+                    <img src="https://www.cricbuzz.com/images/cb_logo_plus_color.svg" alt="logo">
+                </div>
+            </div>
+        </div>
+            <!-- enterOtp -->
+        <div id="enterOtp" class="fontsize">
+            <h5 class="fontsize1">Enter the 6 digit OTP</h5>
+            <p class="fontsize">OTP sent to
+                <span>your mail</span>
+            </p>
+        </div>
+           <!-- otpbox -->
+        <form id="form">
+            <input type="text" maxlength="1" autofocus id="num1"  onkeyup="movetoNext(this, 'num2')">
+            <input type="text" maxlength="1" autofocus id="num2" onkeyup="movetoNext(this, 'num3')">
+            <input type="text" maxlength="1" autofocus id="num3" onkeyup="movetoNext(this, 'num4')">
+            <input type="text" maxlength="1" autofocus id="num4" onkeyup="movetoNext(this, 'num5')">
+            <input type="text" maxlength="1" autofocus id="num5" onkeyup="movetoNext(this, 'num6')">
+            <input type="text" maxlength="1" autofocus id="num6" onkeyup="change()"  >
+            <div class="button">
+                <input type="submit" value="SUBMIT" id="submit" class="fontsize">
+            </div>
+        </form>
+        <!-- button -->
+       
+        <!-- timer -->
+        <p id="demo"></p>
+
+        <!-- helpbox -->
+        <div class="help">
+            <a href="">Need help?</a>
+        </div>
+    </div>  
+</body>
+</html>
+<script src="./Script/timer.js"></script>

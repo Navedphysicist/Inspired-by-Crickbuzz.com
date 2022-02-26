@@ -1,0 +1,1338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./Styles/navbar.css">
+     
+    <link rel="stylesheet" href="./Styles/footer.css">
+    
+    <link rel="stylesheet" href="./Styles/middle.css">
+  
+    <style>
+        /* body {
+            width: 1240px;
+            height: auto;
+            background-color: grey;
+            font-family: helvetica, "Segoe UI", Arial, sans-serif;
+        }
+
+        * {
+            
+        } */
+
+        .container1 {
+            line-height: 1.5;
+
+            width: 1020px;
+            margin: auto;
+            background-color: #fff;
+
+        }
+
+        /* -------------------------------------------------- */
+        .heading {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .heading1>h1 {
+            font-size: 18px;
+            padding: 6px;
+            margin-bottom: 0;
+        }
+
+        .declearinfo>a {
+            text-decoration: none;
+            cursor: pointer;
+
+            padding-right: 15px;
+            color: grey;
+        }
+
+        .declearinfo {
+            padding-left: 10px;
+            font-size: 12px;
+
+        }
+
+        .declearinfo>span {
+            color: black;
+        }
+
+        .nab {
+            width: 960px;
+            height: 34px;
+            text-decoration: none;
+            padding: 10px 10px 0px;
+
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid grey;
+
+            font-size: 14px;
+
+
+        }
+
+         .nab>span>a {
+            color: black;
+            text-decoration: none;
+        } 
+
+        .nab>span {
+
+            padding-right: 20px;
+
+            font-weight: 150;
+            padding-bottom: 6px;
+
+
+        }
+
+        .nab>span>a:hover {
+            color: #028062;
+
+        }
+
+        .nab>span:hover {
+            color: #028062;
+
+            padding-right: 20px;
+
+            font-weight: 150;
+            padding-bottom: 6px;
+            border-width: 30px;
+            border-bottom: 3px solid #028062;
+        }
+
+        .scoretable {
+            display: flex;
+            width: 613px;
+            height: 180px;
+           
+        }
+
+
+        .table {
+      
+            height: 180px;
+            border: 1px solid #e3e6e3;
+            /* border: 1px solid black; */
+            font-size: 14px;
+            margin: 0 5px 0 10px;
+        }
+
+        th {
+            color: grey;
+            background-color: #e3e6e3;
+
+
+        }
+
+        th,
+        td {
+            padding-left: 35px;
+        }
+
+
+        .data {
+            font-size: 14px;
+            width: 295px;
+            height: auto;
+            padding: 10px;
+            border: 1px solid #e3e6e3;
+        }
+
+        .keystatus {
+            font-size: 12px;
+            width: 295px;
+            margin: 0px 0px 5px 5px;
+            height: 175px;
+            padding: 2px 10px;
+            border: 1px solid #e3e6e3;
+            /* padding-right: 5px; */
+        }
+
+        .keystatus>div {
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #e3e6e3;
+            color: grey;
+            padding-top: -20px;
+            border-radius: 1px solid rgba(102, 102, 102, 0.897);
+
+        }
+
+        .keystatus>div>p {
+            margin-top: 30px;
+
+
+
+        }
+
+        .keystatus>div>h6,
+        p {
+
+
+            margin-top: 10px;
+        }
+
+        .data {
+
+
+            width: 600px;
+            height: auto;
+            padding: 10px;
+            /* border: 1px solid gray; */
+        }
+
+        .holedata {
+            display: flex;
+        }
+
+        .highestscore {
+            width: 585px;
+
+            display: flex;
+            font-size: 12px;
+            border-top: 0.5px solid #666;
+            border-bottom: 0.5px solid #666;
+
+            background-color: rgb(233, 233, 233);
+
+        }
+
+        .highestscore>div {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            padding: 10px;
+
+        }
+
+        .highestscore>div:nth-child(5)>p:nth-child(1) {
+
+            display: flex;
+            flex-direction: column;
+            /* background-color: yellow; */
+            padding-left: 20px;
+
+        }
+
+        .highestscore>div:nth-child(5)>p:nth-child(2) {
+
+            display: flex;
+            flex-direction: column;
+            /* background-color: yellow; */
+            margin-top: 30px;
+            margin-left: -30px;
+        }
+
+        .paragraph>div {
+            display: flex;
+            padding-right: 30px;
+            /* border: 1px solid red; */
+            width: 600px;
+            height: auto;
+            overflow: hidden;
+            box-sizing: border-box;
+            font-size: 14px;
+
+        }
+
+        .paragraph>div>p {
+            /* border: 1px solid red; */
+            padding-right: 15px;
+        }
+
+        .comment {
+            border: 1px solid grey;
+            padding: 5px;
+            display: flex;
+            justify-content: center;
+            border-radius: 5px;
+        }
+
+
+
+        .nabbelowitem>div+p {
+            color: red;
+        }
+
+        .leftcolum {
+            display: flex;
+        }
+
+        .rightcolum {
+            width: 304px;
+            height: auto;
+            border-radius: 1px solid grey;
+        }
+
+        .videos {
+            width: 310px;
+            height: auto;
+            border-radius: 1px solid grey;
+            color: black;
+            text-align: center;
+        }
+        .videos>div a{
+            color: black; 
+            text-align: center;
+        }
+        .videos1 {
+            width: 333px;
+            height: auto;
+            text-decoration: none;
+            color: black;
+            text-align: center;
+
+        }
+
+        .videos,
+        .videos1>div>a:hover {
+            text-decoration: underline;
+            cursor: pointer;
+            padding: 15px;
+            text-align: center;
+            
+        }
+        .videos,
+        .videos1>div>a {
+            color: black;
+        }
+
+
+        #space {
+            width: 600px;
+            height: 110px;
+            padding: 2px;
+            margin: 5px;
+        }
+
+        iframe {
+            padding: 7px;
+            border-radius: 15px;
+        }
+
+        .specilaimg {
+            width: 320px;
+
+            text-align: center;
+
+
+        }
+
+        .specilaimg>a {
+            color: black;
+            text-decoration: underline;
+            cursor: pointer;
+
+        }
+
+        .specilaimg> img {
+            border-radius: 10px;
+        }
+        .belowimg >img{
+            padding: 5px 40px 5px 5px;
+        }
+
+        .upper1>div {
+            padding-left: 10px;
+
+            font-size: 20px;
+            color: rgba(0, 0, 0, 0.753);
+
+        }
+
+        .buttonsahu {
+            background-color: teal;
+            color: white;
+            padding: 7px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .nabbelowitem {
+            display: flex;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <div class="add">
+                <img
+                    src="https://s0.2mdn.net/simgad/655162476443145730">
+            </div>
+            <!-- navbar -->
+            <div class="nav">
+
+                <a href="./index.html"> <img src="https://www.cricbuzz.com/images/cb_logo.svg"></a>
+                <div class="nav-items">
+                    <a href="./Live Scores.html" title="live Cricet Score" class="nav-item">Live Scores</a>
+                    <a href="#" title="Cricket Schedule" class="nav-item">Schedule</a>
+                    <a href="#" title="Cricket Scorecard Archives" class="nav-item">Archives</a>
+
+                    <span class="rightmenu">
+                        <a href="./latestnews.html" title="Cricket News" class="nav-item">News</a><span><i
+                                class="fa-solid fa-caret-down"></i></span>
+                        <span class="dropdown-menu">
+                            <a href="#">All Stories</a>
+                            <a href="#">Cricbuzz Plus </a>
+                            <a href="#">Latest News </a>
+                            <a href="#">Topics</a>
+                            <a href="#">Spotlight</a>
+                            <a href="#">Opinion</a>
+                            <a href="#">Specials</a>
+                            <a href="#">Stats & Analysis</a>
+                            <a href="#">Interviws</a>
+                            <a href="#">Live Blogs</a>
+                            <a href="#">Harsha Bhogle</a>
+                        </span>
+                    </span>
+                    <span class="rightmenu">
+                        <a href="#" title="Cricket Series" class="nav-item">Series</a><span><i
+                                class="fa-solid fa-caret-down"></i></span>
+                        <span class="dropdown-menufirst">
+                            <a href="#">Srilanka tour of india 2022</a>
+                            <a href="#">Indian Women tour of New Zealand,2022 </a>
+                            <a href="#">South Africa tour of New Zealand,2022 </a>
+                            <a href="#">Afganistan tour of Bangladesh,2022</a>
+                            <a href="#">Rangi trophy 2021-22</a>
+                            <a href="#">Pakisthan Super League,2022</a>
+                            <a href="#">CSA T20 Challenge 2022</a>
+                            <a href="#">Icc Mens T20 World Cup Qualifier A 2022</a>
+                            <a href="#"> All Series>></a>
+
+                        </span>
+                    </span>
+                    <span class="rightmenu">
+                        <a href="#" title="Cricket Teams" class="nav-item">Teams</a><span><i
+                                class="fa-solid fa-caret-down"></i></span>
+                        <span class="dropdown-menusecond">
+
+
+                            <a href="#"><strong>Test Teams</strong></a>
+                            <a href="#">India </a>
+                            <a href="#">Pakisthan </a>
+                            <a href="#">Australia </a>
+                            <a href="#">Sri lanka</a>
+                            <a href="#">Bangladesh</a>
+                            <a href="#">England</a>
+                            <a href="#">West Indies</a>
+                            <a href="#">South-Africa</a>
+                            <a href="#">Zimbambe</a>
+                            <a href="#">New-Zealand</a>
+
+
+
+                        </span>
+
+                    </span>
+                    <span class="rightmenu">
+                        <a href="#" title="Cricket Videos" class="nav-item">Videos</a> <span><i
+                                class="fa-solid fa-caret-down"></i></span>
+                        <span class="dropdown-menusecond">
+
+                            <a href="#">All Videos </a>
+                            <a href="#">Categories</a>
+                            <a href="#">Playlist </a>
+
+                        </span>
+
+                    </span>
+                    <span class="rightmenu">
+                        <a href="#" title="ICC Ranking" class="nav-item">Ranking</a><span><i
+                                class="fa-solid fa-caret-down"></i></span>
+                        <span class="dropdown-menusecond">
+                            <a href="#">ICC Ranking-Men </a>
+                            <a href="#">ICC Ranking-Women</a>
+
+
+                        </span>
+
+                    </span>
+                    <span class="rightmenu">
+                        <a href="#" class="nav-item">More</a><span><i class="fa-solid fa-caret-down"></i></span>
+                        <span class="dropdown-menusecond">
+                            <a href="#">World-Test Championship </a>
+                            <a href="#">World Cup Super League</a>
+                            <a href="#">Quiz </a>
+                            <a href="#">Photos</a>
+                            <a href="#">Mobile-App</a>
+                            <a href="#">Careers</a>
+                            <a href="#">Contact Us</a>
+                        </span>
+
+                    </span>
+                </div>
+                <div class="cricplus">
+                    <button>Cricbuzz Plus</button>
+                    <!-- search bar -->
+                    <i class="fa-solid fa-magnifying-glass search"></i>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+
+
+            </div>
+
+
+
+
+        </header>
+        <!-- ------------------------------------------------  -->
+        <nav class="navbarsahu">
+            <div class="halfnav">
+                <div> <a>MATCHES</a></div>
+                <div> <a href="./matches copy.html.html">NZW vs INDW...</a></div>
+                <div> <a href="./matches copy 2.html"> IND vs WI - IND Won </a></div>
+                <div> <a href="">LHQ vs PSZ - Complete</a></div>
+
+                <div> <a>UAE vs IRE - UAE Won</a></div>
+
+                <div> <a>MS vs ISU - MS Won</a></div>
+
+
+
+            </div>
+            <div class="halfright">
+                <span class="dropdownsahu" ondblclick="closed()">ALL<i class="fa-solid fa-caret-down"></i></span>
+            </div>
+
+
+
+        </nav>
+        <div class="headersahu">
+            <nav class="navchang">
+                <span><a href="">All</a></span>
+                <span><a href="">Live now</a></span>
+                <span><a href="">Today</a></span>
+
+
+
+            </nav>
+
+
+            <div class="navbaritem">
+                <ul>
+                    <div style="color: #00deaa;
+                    
+                    font-weight: 700;">INTERNATIONAL</div>
+                    <li>
+
+                        <div>
+
+
+                            <div>
+                                <a target="_self"
+                                    href="/live-cricket-scores/38632/ind-vs-sl-1st-t20i-india-v-sri-lanka-2022"
+                                    title="India v Sri Lanka, 1st T20I - Upcoming">
+                                    <span>India vs Sri Lanka</span>
+                                </a>
+                                <div>1st T20I</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+
+                        <div>
+
+                            <div>New Zealand v South Africa, 2022</div>
+                            <div><a target="_self"
+                                    href="/live-cricket-scores/38632/ind-vs-sl-1st-t20i-india-v-sri-lanka-2022"
+                                    title="India v Sri Lanka, 1st T20I - Upcoming">
+                                    <span>India vs Sri Lanka</span>
+                                </a>
+                                <div>1st Test</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+
+                            <div>Bangladesh v Afghanistan, 2022</div>
+                            <div><a target="_self"
+                                    href="/live-cricket-scores/38632/ind-vs-sl-1st-t20i-india-v-sri-lanka-2022"
+                                    title="India v Sri Lanka, 1st T20I - Upcoming">
+                                    <span>Bangladesh v Afghanistan</span>
+                                </a>
+                                <div>1st ODI</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+
+                            <div>ICC Mens T20WC Qualifier A</div>
+                            <div><a target="_self"
+                                    href="/live-cricket-scores/38632/ind-vs-sl-1st-t20i-india-v-sri-lanka-2022"
+                                    title="India v Sri Lanka, 1st T20I - Upcoming">
+                                    <span>India vs Sri Lanka</span>
+                                </a>
+                                <div>9th Match, Group B</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+
+
+                            <div><a target="_self"
+                                    href="/live-cricket-scores/38632/ind-vs-sl-1st-t20i-india-v-sri-lanka-2022"
+                                    title="India v Sri Lanka, 1st T20I - Upcoming">
+                                    <span>United Arab Emirates vs Bahrain
+                                    </span>
+                                </a>
+                                <div></div>
+                                <div>10th Match, Group B</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+
+
+                            <div><a target="_self"
+                                    href="/live-cricket-scores/38632/ind-vs-sl-1st-t20i-india-v-sri-lanka-2022"
+                                    title="India v Sri Lanka, 1st T20I - Upcoming">
+                                    <span>Oman vs Philippines
+                                    </span>
+                                </a>
+                                <div></div>
+                                <div>12th Match, Group B</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+
+
+                            <div><a target="_self"
+                                    href="/live-cricket-scores/38632/ind-vs-sl-1st-t20i-india-v-sri-lanka-2022"
+                                    title="India v Sri Lanka, 1st T20I - Upcoming">
+                                    <span>Nepal vs Canada
+                                    </span>
+                                </a>
+                                <div></div>
+                                <div>11th Match, Group B</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+
+
+                            <div><a target="_self"
+                                    href="/live-cricket-scores/38632/ind-vs-sl-1st-t20i-india-v-sri-lanka-2022"
+                                    title="India v Sri Lanka, 1st T20I - Upcoming">
+                                    <span>Bahrain vs Philippines
+                                    </span>
+                                </a>
+                                <div></div>
+                                <div>7th Place Semi-Finals (B3 v A4)</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+
+
+                            <div><a target="_self"
+                                    href="/live-cricket-scores/38632/ind-vs-sl-1st-t20i-india-v-sri-lanka-2022"
+                                    title="India v Sri Lanka, 1st T20I - Upcoming">
+                                    <span>Canada vs Germany
+                                    </span>
+                                </a>
+                                <div></div>
+                                <div> 5th Place Semi-Finals (A3 v B4)</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul>
+                    <div style="color: #00deaa;
+                    
+                    font-weight: 700;">T20 LEAGUE</div>
+                    <li>
+                        <div>
+
+
+
+                            <div><a target="_self"
+                                    href="/live-cricket-scores/38632/ind-vs-sl-1st-t20i-india-v-sri-lanka-2022"
+                                    title="India v Sri Lanka, 1st T20I - Upcoming">
+                                    <span>India vs Sri Lanka</span>
+                                </a>
+                                <div>1st T20I</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+
+                            <div>New Zealand v South Africa, 2022</div>
+                            <div><a target="_self"
+                                    href="/live-cricket-scores/38632/ind-vs-sl-1st-t20i-india-v-sri-lanka-2022"
+                                    title="India v Sri Lanka, 1st T20I - Upcoming">
+                                    <span>India vs Sri Lanka</span>
+                                </a>
+                                <div>1st Test</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+
+                            <div>Bangladesh v Afghanistan, 2022</div>
+                            <div><a target="_self"
+                                    href="/live-cricket-scores/38632/ind-vs-sl-1st-t20i-india-v-sri-lanka-2022"
+                                    title="India v Sri Lanka, 1st T20I - Upcoming">
+                                    <span>Bangladesh v Afghanistan</span>
+                                </a>
+                                <div>1st ODI</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+
+                            <div>ICC Mens T20WC Qualifier A</div>
+                            <div><a target="_self"
+                                    href="/live-cricket-scores/38632/ind-vs-sl-1st-t20i-india-v-sri-lanka-2022"
+                                    title="India v Sri Lanka, 1st T20I - Upcoming">
+                                    <span>India vs Sri Lanka</span>
+                                </a>
+                                <div>9th Match, Group B</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+
+
+                            <div><a target="_self"
+                                    href="/live-cricket-scores/38632/ind-vs-sl-1st-t20i-india-v-sri-lanka-2022"
+                                    title="India v Sri Lanka, 1st T20I - Upcoming">
+                                    <span>India vs Sri Lanka</span>
+                                </a>
+                                <div>10th Match, Group B</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul>
+                    <div style="color: #00deaa;
+                    
+                    font-weight: 700;">DOMESTIC</div>
+                    <li>
+                        <div>
+
+
+
+                            <div><a target="_self"
+                                    href="/live-cricket-scores/38632/ind-vs-sl-1st-t20i-india-v-sri-lanka-2022"
+                                    title="India v Sri Lanka, 1st T20I - Upcoming">
+                                    <span>Ranji Trophy</span>
+                                    <span>Delhi vs Jharkhand</span>
+                                </a>
+                                <div>Elite Group H</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+
+                            <div>Bengal vs Hyderabad</div>
+                            <div><a target="_self"
+                                    href="/live-cricket-scores/38632/ind-vs-sl-1st-t20i-india-v-sri-lanka-2022"
+                                    title="India v Sri Lanka, 1st T20I - Upcoming">
+
+                                </a>
+                                <div>Elite Group B</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+
+                            <div>Manipur vs Mizoram</div>
+                            <div><a target="_self"
+                                    href="/live-cricket-scores/38632/ind-vs-sl-1st-t20i-india-v-sri-lanka-2022"
+                                    title="India v Sri Lanka, 1st T20I - Upcoming">
+
+                                </a>
+                                <div>Plate</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+
+                            <div>Baroda vs Chandigarh</div>
+                            <div><a target="_self"
+                                    href="/live-cricket-scores/38632/ind-vs-sl-1st-t20i-india-v-sri-lanka-2022"
+                                    title="India v Sri Lanka, 1st T20I - Upcoming">
+
+                                </a>
+                                <div>Elite Group B</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+
+
+                            <div><a target="_self"
+                                    href="/live-cricket-scores/38632/ind-vs-sl-1st-t20i-india-v-sri-lanka-2022"
+                                    title="India v Sri Lanka, 1st T20I - Upcoming">
+                                    <span>India vs Sri Lanka</span>
+                                </a>
+                                <div>10th Match, Group B</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+
+
+                            <div><a target="_self"
+                                    href="/live-cricket-scores/38632/ind-vs-sl-1st-t20i-india-v-sri-lanka-2022"
+                                    title="India v Sri Lanka, 1st T20I - Upcoming">
+                                    <span>Bihar vs Sikkim
+                                    </span>
+                                </a>
+                                <div>Plate</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+
+
+                            <div><a target="_self"
+                                    href="/live-cricket-scores/38632/ind-vs-sl-1st-t20i-india-v-sri-lanka-2022"
+                                    title="India v Sri Lanka, 1st T20I - Upcoming">
+                                    <span>Railways vs Puducherry
+                                    </span>
+                                </a>
+                                <div>Elite Group C</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+
+
+                            <div><a target="_self"
+                                    href="/live-cricket-scores/38632/ind-vs-sl-1st-t20i-india-v-sri-lanka-2022"
+                                    title="India v Sri Lanka, 1st T20I - Upcoming">
+                                    <span>Uttar Pradesh vs Assam
+                                    </span>
+                                </a>
+                                <div> Elite Group G</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+
+
+                            <div><a target="_self"
+                                    href="/live-cricket-scores/38632/ind-vs-sl-1st-t20i-india-v-sri-lanka-2022"
+                                    title="India v Sri Lanka, 1st T20I - Upcoming">
+                                    <span>Karnataka vs Jammu and Kashmir
+                                    </span>
+                                </a>
+                                <div>Elite Group C</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+
+
+                            <div><a target="_self"
+                                    href="/live-cricket-scores/38632/ind-vs-sl-1st-t20i-india-v-sri-lanka-2022"
+                                    title="India v Sri Lanka, 1st T20I - Upcoming">
+                                    <span>Vidarbha vs Maharashtra
+                                    </span>
+                                </a>
+                                <div>Elite Group G</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+
+
+                            <div><a target="_self"
+                                    href="/live-cricket-scores/38632/ind-vs-sl-1st-t20i-india-v-sri-lanka-2022"
+                                    title="India v Sri Lanka, 1st T20I - Upcoming">
+                                    <span>Himachal Pradesh vs Tripura
+
+                                    </span>
+                                </a>
+                                <div> Elite Group F</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+
+            </div>
+        </div>
+
+
+        <div class="leftcolum">
+            <div class="container1">
+
+
+                <div class="heading1">
+                    <h1>Australia vs Sri Lanka, 5th T20I - Live Cricket Score, Commentary</h1>
+                    <div class="declearinfo">
+                        <span class="text">Series:</span>
+                        <a href="">Sri Lanka tour of Australia, 2022</a>
+                        <span class="text">Venue:</span>
+                        <a href="">Melbourne Cricket Ground,Melbourne</a>
+                        <span class="text">Date & Time:</span>
+                        <a href="">21 Feb , 5:10 PM ,Local</a>
+
+
+                    </div>
+                    <nav class="nab">
+                        <span> <a href="">Commentary</a></span>
+                        <span><a href=""> Scorecard</a>
+                        </span>
+                        <span><a href=""> Highlights</a></span>
+                        <span><a href=""> Full Commentary</a></span>
+                        <span><a href="">Live Blog</a></span>
+                        <span><a href=""> Match Facts</a></span>
+                        <span><a href="">News</a></span>
+                        <span> <a href="">Photos</a></span>
+                    </nav>
+
+
+                    <div class="nabbelowitem">
+                        <div class="upper0">
+                            <div class="upper1">
+                                <div>
+                                    <p><strong> 56/2 (15.3) </strong>CRR: 3.54</p>
+
+                                    <p style="color: red;">Afghanistan opt to bat</p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="scoretable">
+                                <div class="table">
+                                    <table>
+                                        <tr>
+                                            <th>Batter</th>
+                                            <th>R</th>
+                                            <th>B</th>
+                                            <th>4s</th>
+                                            <th>6s</th>
+                                            <th>SR</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Rahmat Shah </td>
+                                            <td>31</td>
+                                            <td>61</td>
+                                            <td>3</td>
+                                            <td>0</td>
+                                            <td>50</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Hashmatullah Shahidi </td>
+                                            <td>31</td>
+                                            <td>61</td>
+                                            <td>3</td>
+                                            <td>0</td>
+                                            <td>50</td>
+                                        </tr>
+                                    </table>
+                                    <table>
+                                        <tr>
+                                            <th>Bowlwer</th>
+                                            <th>O</th>
+                                            <th>M</th>
+                                            <th>R</th>
+                                            <th>W</th>
+                                            <th>ECO</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Mehidy Hasan </td>
+                                            <td>31</td>
+                                            <td>61</td>
+                                            <td>3</td>
+                                            <td>0</td>
+                                            <td>50</td>
+                                        </tr>
+
+                                    </table>
+                                </div>
+                                <div class="keystatus">
+                                    <div>KEY STATUS</div>
+                                    <p> <strong>Partnership</strong> : 19(45)</p>
+                                    <p><strong>Last Wkt </strong> : b Mahmudullah 28(43) - 102/4 in 27.6 ov.</p>
+                                    <p> <strong> Last 5 over</strong> : 26 runs, 1 wkts</p>
+
+                                </div>
+                            </div>
+                            <img id="space"
+                                src="https://www.journal.daimani.com/content/images/2020/11/GettyImages-1164280767--1-.jpg">
+                        </div>
+                        <div class="videos">
+                            <div>
+                                <h1 style="color: #028062;font-size: 25px; text-decoration: none;">FEATURES VIDEO</h1>
+                                <iframe width="306" height="173" src="https://www.youtube.com/embed/o5-osMPlxts"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                                <a> De Villiers की तरह विस्फोटक Suryakumar Yadav हैं India के Mr. 360: Parthiv Patel</a>
+                                <button class="buttonsahu" style="margin-top: 20px; color: rgb(204, 58, 58);font-weight: bold;">LIVE
+                                    NEWS</button>
+
+                            </div>
+
+
+                        </div>
+
+
+
+                    </div>
+                    <div class="holedata">
+
+
+                        <div class="data">
+                            <p><strong>Mehidy Miraz:</strong> Definitely, I think 215 is a good score for our batsmen.
+                                The
+                                wicket is
+                                good and if we play well we can easily chase. Just try to bowl the dot balls in the
+                                middle
+                                overs
+                                and
+                                build the pressure - that was my plan. We will focus on playing normal cricket,
+                                ball-to-ball
+                                and
+                                we
+                                are
+                                confident.</p>
+                            <p><strong>Local Time, 08:41 GMT, 14:11 IST:</strong> Disappointing batting performance from
+                                Afghanistan. On
+                                a good batting wicket they never got going and by the halfway stage had played more than
+                                100
+                                dots as
+                                Rahmat and Shahidi failed to rotate the strike enough. Old-school ODI batting of the 80s
+                                and
+                                early
+                                90s
+                                and that allowed the hosts to build the pressure on them. Soon after getting in they got
+                                out.
+                                Mehidy
+                                with a tight spell through the middle overs as he kept a leash on things. Eventually it
+                                was
+                                left
+                                to
+                                Najiubullah who played an enterprising knock of 67 to help his side go over 200. There
+                                was a
+                                late
+                                collapse after Nabi got out and the visitors could not bat out their overs. Mustafizur
+                                and
+                                Shoriful
+                                cleaning up the lower-order. Back for the chase in 30 minutes...</p>
+                            <div>
+                                <div><strong>49.1:</strong>Mustafizur to Ahmadzai, out Caught by Mahmudullah!! Fine
+                                    catch and that ends
+                                    Afghanistan's
+                                    innings
+                                    at 215. Slower delivery on a fuller length outside leg, Ahmadzai makes room and
+                                    lofts
+                                    high
+                                    in
+                                    the
+                                    air, Mahmudullah goes back to take an overhead catch under his eyes, then tumbles
+                                    backwards
+                                    clutching the ball safely. Mustafizur has a smile.
+
+                                </div>
+                                <div>
+
+                                </div>
+                            </div>
+
+
+
+
+
+                            <strong> Ahmadzai c Mahmudullah b Mustafizur 5(10)</strong>
+                            <p>Mustafizur to Ahmadzai,<strong>THATS OUT!!</strong> Caught!!</p>
+                            <div class="highestscore">
+                                <div><strong>49:1.1</strong></div>
+                                <div>Runs Scored: <strong> 2 1 1 W 0 1</strong>
+                                </div>
+                                <div>Score after 48 overs
+                                    <strong> AFG 210-8</strong>
+                                </div>
+                                <div>
+                                    Yamin Ahmadzai
+
+                                    Najibullah Zadran
+                                </div>
+                                <div>
+
+                                    3(36)
+                                    64(81)
+                                </div>
+                                <div>Mustafizur Rahman
+                                    9-0-35-2</div>
+                            </div>
+                            <div class="paragraph">
+                                <div>
+                                    <p><strong>49.2:</strong></p>
+                                    <p>Mustafizur to Ahmadzai, no run, slower delivery on a fuller length on the stumps,
+                                        defended
+                                    </p>
+                                </div>
+                                <div>
+                                    <p> <strong>49:3</strong></p>
+                                    <p>Shoriful Islam to Ahmadzai, 1 run, full on off, Ahmadzai gets forward to drive to
+                                        sweeper
+                                        cover
+                                    </p>
+                                </div>
+                                <div>
+                                    <p> <strong>49.4:</strong></p>
+                                    <p>Shoriful Islam to Ahmadzai, wide, down leg</p>
+                                </div>
+                                <div>
+                                    <p> <strong>49.5:</strong></p>
+                                    <p>Shoriful Islam to Najibullah, 1 run, slower delivery on the stumps, Najibullah
+                                        lofts
+                                        to
+                                        long-on
+                                    </p>
+                                </div>
+                                <div>
+                                    <p> <strong>49.6:</strong></p>
+                                    <p>Shoriful Islam to Najibullah, no run, short of length on off, Najibullah defends
+                                        off
+                                        the
+                                        back
+                                        foot to cover</p>
+                                </div>
+                                <div>
+                                    <p> <strong>49.7:</strong></p>
+                                    <p>Shoriful Islam to Ahmadzai, 1 run, full on the stumps, Ahmadzai pushes and the
+                                        thick
+                                        outside-edge
+                                        runs away fine to third man for a single</p>
+                                </div>
+
+                            </div>
+                            <strong> Ahmadzai c Mahmudullah b Mustafizur 5(10)</strong>
+                            <p>Mustafizur to Ahmadzai,<strong>THATS OUT!!</strong> Caught!!</p>
+                            <div class="highestscore">
+
+                                <div><strong>48</strong></div>
+                                <div>Runs Scored: <strong> 2 1 1 W 0 1</strong>
+                                </div>
+                                <div>Score after 48 overs
+                                    <strong> AFG 210-8</strong>
+                                </div>
+                                <div>
+                                    Yamin Ahmadzai
+                                    Najibullah Zadran
+
+
+                                </div>
+                                <div>
+
+                                    3(36)
+                                    64(81)
+                                </div>
+                                <div>Mustafizur Rahman
+                                    9-0-35-2</div>
+                            </div>
+                            <div class="paragraph">
+                                <div>
+                                    <p><strong>48.1:</strong></p>
+                                    <p>Mustafizur to Ahmadzai, no run, slower delivery on a fuller length on the stumps,
+                                        defended
+                                    </p>
+                                </div>
+                                <div>
+                                    <p> <strong>48.2:</strong></p>
+                                    <p>Shoriful Islam to Ahmadzai, 1 run, full on off, Ahmadzai gets forward to drive to
+                                        sweeper
+                                        cover
+                                    </p>
+                                </div>
+                                <div>
+                                    <p> <strong>48.3:</strong></p>
+                                    <p>Shoriful Islam to Ahmadzai, wide, down leg</p>
+                                </div>
+                                <div>
+                                    <p> <strong>48.4:</strong></p>
+                                    <p>Shoriful Islam to Najibullah, 1 run, slower delivery on the stumps, Najibullah
+                                        lofts
+                                        to
+                                        long-on
+                                    </p>
+                                </div>
+                                <div>
+                                    <p> <strong>48.5:</strong></p>
+                                    <p>Shoriful Islam to Najibullah, no run, short of length on off, Najibullah defends
+                                        off
+                                        the
+                                        back
+                                        foot to cover</p>
+                                </div>
+                                <div>
+                                    <p> <strong>48.6:</strong></p>
+                                    <p>Shoriful Islam to Ahmadzai, 1 run, full on the stumps, Ahmadzai pushes and the
+                                        thick
+                                        outside-edge
+                                        runs away fine to third man for a single</p>
+                                </div>
+
+                            </div>
+                            <div class="comment">Load more Commentary</div>
+                            <div class="belowimg">
+                                <img style="width: 600px;height: auto ;padding:5px;"
+                                    src="https://i0.wp.com/www.agencyreporter.com/wp-content/uploads/2021/10/GoodLuckGirls-by-Cadbury-Dairy-Milk-emerged-as-the-most-Viral-ad-in-phase-2-of-IPL-IPL-2021-Report-by-Wavemaker-Mesh.jpg?fit=740%2C460&ssl=1">
+                            </div>
+                        </div>
+                        <div class="videos1">
+                            <div>
+                                <!-- <h1>FEATURES VIDEO</h1>
+                            <iframe width="306" height="173" src="https://www.youtube.com/embed/o5-osMPlxts"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <a> De Villiers की तरह विस्फोटक Suryakumar Yadav हैं India के Mr. 360: Parthiv Patel</a> -->
+                                <iframe width="306" height="173" src="https://www.youtube.com/embed/xS78-kiLIuY"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                                <a>Good to see Harshal do what Bumrah does for India in death overs: Ajay Jadeja</a>
+                                <iframe width="306" height="173" src="https://www.youtube.com/embed/lVDid14rbXU"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                                <a>Rahane & Pujara dropped from India's Test squad! Dinesh Karthik & Ajay Jadeja
+                                    react</a>
+                                <iframe width="306" height="173" src="https://www.youtube.com/embed/cPtN-yeYGUA"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                                <a>धोनी खेल के हिसाब से नहीं, खेल धोनी के हिसाब से बदलता है - आशीष नेहरा</a>
+                                <button class="buttonsahu" >More News</button>
+                                <div class="specilaimg">
+                                    <h4 style="color: #028062;font-size: 25px;">SPECIALS</h4>
+                                    <img class="img"
+                                        src="https://www.cricbuzz.com/a/img/v1/300x170/i1/c226157/the-draft-model-was-considere.jpg">
+                                    <a>IPL is still young, the auction must not disappear in a hurry</a>
+                                    <p>In an exclusive interview, former COO of the league Sundar Raman discusses the
+                                    </p>
+
+
+                                    <img class="img"
+                                        src="https://www.cricbuzz.com/a/img/v1/300x170/i1/c225869/ambati-rayudu-has-been-csks-s.jpg">
+                                    <a>The CSK hand in Rayudu's return to cricket</a>
+                                    <p> IPL auction, how it was conceived and whether it has outlived its usefulness
+                                    </p>
+
+                                    <img class="img"
+                                        src="https://www.cricbuzz.com/a/img/v1/300x170/i1/c227010/smriti-mandhana-top-scored-for.jpg">
+
+                                    <a>All-round India register morale-boosting win</a>
+                                    <p>Smriti Mandhana top-scored for India with 71 © Getty</p>
+                                    <img class="img"
+                                        src="https://www.cricbuzz.com/a/img/v1/300x170/i1/c227008/new-zealand-showed-utter-domin.jpg">
+                                    <a>History beckons New Zealand in Christchurch</a>
+                                    <p>New Zealand showed utter dominance in the first Test, and will likely look to
+                                        impose
+                                        in similar manner in the second at the same venue - Hagley Oval © AFP</p>
+                                    <button class="buttonsahu" >More News</button>
+                                    <img src="">
+                                    <a></a>
+                                    <p></p>
+                                    <img src="">
+                                    <a></a>
+                                    <p></p>
+                                    <img src="">
+                                    <a></a>
+                                    <p></p>
+                                    <img src="">
+                                    <a></a>
+                                    <p></p>
+                                    <img src="">
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+    <!-- ---------------------------------------------  -->
+    <div id="footer">
+        <div id="child">
+            <div id="lab">
+                <a href="./home.html">
+                    <img src="https://www.cricbuzz.com/images/cb_logo.svg" alt="" />
+                </a>
+            </div>
+            <div id="others">
+                <div class="sub-links">
+                    <p class="title">MOBILE SITE & APPS</p>
+                    <p class="links"><i class="fab fa-android icon-color"></i><a href="">m.cricbuzz.com</a></p>
+                    <p class="links"><i class="fab fa-android icon-color"></i><a href="">Android</a> </p>
+                    <p class="links"><i class="fab fa-apple icon-color"></i><a href="">iOS</a> </p>
+                </div>
+                <div class="sub-links">
+                    <p class="title">FOLLOW US ON</p>
+                    <p class="links"><i class="fab fa-facebook-f icon-color"></i><a href="">facebook</a></p>
+                    <p class="links"><i class="fab fa-twitter icon-color"></i><a href="">twitter</a> </p>
+                    <p class="links"><i class="fab fa-youtube icon-color"></i><a href="">youtube</a> </p>
+                    <p class="links"><i class="fab fa-pinterest icon-color"></i><a href="">Pinterest</a> </p>
+                </div>
+                <div class="sub-links">
+                    <p class="title">COMPANY</p>
+                    <p class="links"><a href="">Careers</a> </p>
+                    <p class="links"><a href="">Advertise</a> </p>
+                    <p class="links"><a href="">Privacy Policy</a> </p>
+                    <p class="links"><a href="">Terms of Use</a></p>
+                    <p class="links"><a href="">Cricbuzz TV Ads</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="copy">© 2022 Cricbuzz.com, Times Internet Limited. All rights reserved | The Times of India |
+            Navbharat
+            Times</p>
+        </div>
+</body>
+<script src="./Script/middle.js"></script>
+</html>

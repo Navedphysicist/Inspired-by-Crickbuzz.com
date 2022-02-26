@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- <link rel="stylesheet" href="/completeCrickbuzz/Styles/mobilefooter.css"> -->
+    <style>
+        .footercontainer {
+    width: 100%;
+    height: auto;
+    background-color: #566;
+    /* border: 1px solid red; */
+  }
+  .footernavbar {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  #menu {
+    font-family: sans-serif;
+    color: whitesmoke;
+    font-size: 20px;
+  }
+
+  #ltopdiv {
+    background-color: white;
+    display: flex;
+    border-radius: 5px;
+    font-family: sans-serif;
+    padding: 3px;
+    width: 60px;
+    font-weight: bold;
+    justify-content: space-between;
+    cursor:pointer
+  }
+  #topimg {
+    height: 20px;
+    width: 20px;
+  }
+
+  .footerbottomwhole {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    /* border: 1px solid red; */
+    width: 100%;
+  }
+
+  .footerleft {
+    width: 50%;
+    /* border: 3px solid green; */
+  }
+
+  .footerright {
+    width: 50%;
+    /* border: 3px solid green; */
+  }
+
+  .footerleft > div {
+    display: grid;
+    color: whitesmoke;
+    font-family: sans-serif;
+    font-size: 15px;
+    padding: 10px;
+    cursor:pointer
+    /* margin:5px; */
+  }
+
+  .footerright>div{
+    display: grid;
+    color: whitesmoke;
+    font-family: sans-serif;
+    font-size: 15px;
+    padding: 10px;
+    cursor:pointer
+
+  }
+
+  .footerleft>div:hover{
+      text-decoration: underline;
+  }
+
+  .footerright>div:hover{
+      text-decoration: underline;
+  }
+
+
+
+  #mobiapps{
+      font-size:20px;   
+  }
+
+  #privacy{
+      margin: 10px 5px 5px 20px;
+      color:whitesmoke;
+      font-family:sans-serif;
+      font-size:15px;
+      padding-bottom:50px;
+      cursor:pointer
+  }
+
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+           height:100%;
+        }
+
+        .top {width:100%;
+            height: 10vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #4e585f;
+           
+        }
+        .top>img{
+            width:92px;
+            height: 36px;
+            margin-left:10px ;
+        }
+        .right{
+            margin-right: 20px;
+        }
+        .right>.fa-solid{
+            color: #fff;
+            padding: 5px;
+            border: 1px solid white;
+            border-radius: 50%;
+        }
+        .menu{
+            padding:5px 18px;
+            margin-left: 10px;
+            border-radius: 5px;
+            border: none;
+            font-size: 16px;
+        }
+        .topbelow{
+            margin-top: 2px;
+            display: flex;
+            justify-content: space-around;
+            height: 5vh;
+           
+            border-bottom:1px solid grey ;
+           
+        }
+        .topbelow>span{
+            width:40%;
+            height: auto;
+          font-size: 18px;
+            border-radius: 2px;
+        }
+        .topbelow>span:hover{
+            background-color:#dcdcdc;
+        }
+        span{padding: 2px;
+            text-align: center;
+        }
+        span:first-child{
+            border-right: 1px solid grey;
+          
+        }
+        span:last-child{
+            border-left: 1px solid grey;
+        }
+        .inter>select{
+            width:100%;
+            border: none;
+            border: 1px solid grey;
+            border-radius: 5px;
+            padding: 5px;
+           
+         
+            margin-top:10px ;
+            margin-left:10px ;
+            box-shadow: 1px 1px 5px grey;
+        }
+       .cards{width: 100%;
+           height: 195px;
+       }
+       .cards>h2{width: 100%;
+        height: 40px;
+        background-color:#335a7b;
+        color:white;
+        padding-top: 5px;
+        font-size: 20px;
+        font-weight:lighter;
+        padding-left: 20px;
+margin-top: 10px;
+       }
+       h2+p{margin-left:15px ;
+           font-size: 14px;
+           margin-top: 10px;
+           color: #335a7b;
+       }
+       .firstdiv {margin-left:15px ;
+           display: flex;
+           width: 250px;
+           margin-top: 10px;
+           justify-content: space-between;
+           color: gray;
+           font-weight: bolder;
+       }
+       .seconddiv{
+        margin-left:15px ;
+           display: flex;
+           width: 250px;
+           margin-top: 10px;
+           justify-content: space-between;
+           color: black;
+           font-weight: bolder;
+       }
+       .para{
+       color: #4a90e2;
+       font-weight: bolder;
+       margin-top: 10px;
+       margin-left:15px ;
+       }
+       .last{margin-top: 10px;
+             margin-left:15px ;
+          
+       }
+       .last>button{
+padding:8px 15px;
+cursor: pointer;
+color: #335a7b;
+font-weight: bold;
+background-color: #fff;
+border: 0;
+border: 1px solid gray;
+border-radius: 5px;
+
+       }
+       .last>button:hover{
+        background-color:#e3e6e3;
+       }   
+
+       .bodydata{
+           margin-bottom:20px;
+       }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- navbar  -->
+        <div class="top">
+           
+                <img src="https://www.cricbuzz.com/images/cb_logo.svg">
+           
+            <div class="right">
+                <i class="fa-solid fa-user"></i>
+                <button class="menu">menu </button>
+            </div>
+        </div>
+        <!-- navbar below div  -->
+        <div class="topbelow">
+            <span>Live</span>
+            <span>Recent</span>
+            <span>Upcoming</span>
+        </div>
+        <div class="inter">
+            <select>
+                <option>International</option>
+                <option>League</option>
+                <option>Domestic</option>
+                <option>women</option>
+            </select>
+        </div>
+        <div class="bodydata">
+
+        </div>
+        <div class="footercontainer">
+            <div class="footernavbar">
+              <div id="menu">Menu</div>
+              <div id="ltopdiv">
+                <div>Top</div>
+                <img
+                  id="topimg"
+                  src="https://www.pngmart.com/files/15/Vector-Arrow-Up-PNG-File.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="footerbottomwhole">
+              <div class="footerleft">
+                <div href="">Home</div>
+                <div href="">My Account</div>
+                <div href="">Schedule</div>
+                <div href="">Editorials</div>
+                <div href="">Archives</div>
+                <div href="">Rankings - Men</div>
+                <div href="">Rankings - Women</div>
+                <div href="">Points Table</div>
+                <div href="">Wicket Zone</div>
+                <div href="">World Cup Super League</div>
+                <div href="">Contact Us</div>
+                <div href="">Careers @ Cricbuzz</div>
+                <div id="mobiapps" href="">Mobile Apps</div>
+                <div href="">iPhone</div>
+                <div href="">Android</div>
+              </div>
+              <div class="footerright">
+                <div href="">Cricbuzz Plus</div>
+                <div href="">Live Scores</div>
+                <div href="">News</div>
+                <div href="">Photos</div>
+                <div href="">Players</div>
+                <div href="">Series</div>
+                <div href="">Videos</div>
+                <div href="">World Test Championship</div>
+                <div href="">Boundary Tracker</div>
+                <div href="">Quiz</div>
+                <div href="">Mobile Apps</div>
+                <div href="">Cricbuzz TV Ads</div>
+                <div id="mobiapps" href="">Social Channels</div>
+                <div href="">facebook</div>
+                <div href="">twitter</div>
+              </div>
+            </div>
+            <div id="privacy" >Privacy | Terms of Service | Contact Us</div>
+          </div>
+
+    </div>
+</body>
+
+</html>
+<script>
+    var data = [{
+        heading: "Sri Lanka tour of India, 2022",
+        para: "1st T20I • Lucknow",
+        score1: "IND",
+        score2: "199/2 (20 Ovs)",
+        score3: "SL",
+        score4: "137/6 (20 Ovs)",
+        headbelow: "India won by 62 runs",
+        button1: "Commentary",
+        button2: "Scorecard"
+    },
+    {
+        heading: "South Africa tour of New Zealand, 2022",
+        para: "1st Test • Christchurch",
+        score1: "RSA",
+        score2: "95-all out & 111-all out",
+        score3: "NZ",
+        score4: "482-all out",
+        headbelow: "New Zealand won by an innings and 276 runs",
+        button1: "Commentary",
+        button2: "Scorecard"
+    },
+    {
+        heading: "Afghanistan tour of Bangladesh, 2022",
+        para: "2nd ODI • Chattogram",
+        score1: "BAN",
+        score2: "306/4 (50 Ovs)",
+        score3: "AFG",
+        score4: "218-all out (45.1 Ovs)",
+
+        headbelow: "Bangladesh won by 88 runs",
+        button1: "Commentary",
+        button2: "Scorecard"
+    },
+    {
+        heading: "ICC Mens T20 WC Qualifier A 2022",
+        para: "3rd Place Play-off • Al Amerat",
+        score1: "OMAN",
+        score2: "87/9 (20 Ovs)",
+        score3: "NEP",
+        score4: "90/1 (16.2 Ovs)",
+        headbelow: "Nepal won by 9 wkts",
+        button1: "Commentary",
+        button2: "Scorecard"
+    },
+    {
+        heading: "West Indies tour of India, 2022",
+        para: "3rd T20I • Kolkata",
+        score1: "IND",
+        score2: "184/5 (20 Ovs)",
+        score3: "WI",
+        score4: "167/9 (20 Ovs)",
+        headbelow: "India won by 17 runs",
+        button1: "Commentary",
+        button2: "Scorecard"
+    },
+    {
+        heading: "Oman Quadrangular T20I Series 2022",
+        para: "6th Match • Al Amerat",
+        score1: "IRE",
+        score2: "127-all out (20 Ovs)",
+        score3: "NEP",
+        score4: "111/9 (20 Ovs)",
+        headbelow: "Ireland won by 16 runs",
+        button1: "Commentary",
+        button2: "Scorecard"
+    },
+    {
+        heading: "Afghanistan tour of Bangladesh, 2022",
+        para: "3rd ODI • Chattogram",
+        score1: "Bangladesh",
+        score2: "Afghanistan",
+        score3: "WI",
+        score4: "167/9 (20 Ovs)",
+        headbelow: "Starts at 10:30 IST, Feb 28 (05:00 GMT)",
+        button1: "Commentary",
+        button2: "Scorecard"
+    },
+    {
+        heading: "Sri Lanka tour of Australia, 2022",
+        para: "5th T20I • Melbourne",
+        score1: "AUS",
+        score2: "154/6 (20 Ovs)",
+        score3: "SL",
+        score4: "155/5 (19.5 Ovs)",
+        headbelow: "Sri Lanka won by 5 wkts",
+        button1: "Commentary",
+        button2: "Scorecard"
+    },
+    {
+        heading: "ICC Cricket World Cup League Two 2019-23",
+        para: "1st Match • Dubai",
+        score1: "United Arab Emirates",
+        score2: "Oman",
+        score3: "WI",
+        score4: "167/9 (20 Ovs)",
+        headbelow: "Starts at 11:00 IST, Mar 05 (05:30 GMT)",
+        button1: "Commentary",
+        button2: "Scorecard"
+    },
+    {
+        heading: "England tour of West Indies, 2022",
+        para: "4-day Practice Match • Antigua",
+        score1: "West Indies Cricket Board President XI",
+        score2: "England",
+        score3: "WI",
+        score4: "167/9 (20 Ovs)",
+        headbelow: "Starts at 19:30 IST, Mar 01 (14:00 GMT)",
+        button1: "Commentary",
+        button2: "Scorecard"
+    },
+
+    ];
+    localStorage.setItem("upcomingmatches", JSON.stringify(data));
+    var newdata = JSON.parse(localStorage.getItem("upcomingmatches")) || [];
+    newdata.map(function (elem) {
+        var maindiv = document.createElement("div");
+        maindiv.setAttribute("class", "cards");
+        var heading = document.createElement("h2");
+        heading.innerHTML = elem.heading;
+        var para = document.createElement("p");
+        para.innerHTML = elem.para;
+        var firstdiv = document.createElement("div");
+        firstdiv.setAttribute("class", "firstdiv");
+        var leftdiv = document.createElement("div");
+        leftdiv.setAttribute("class", "leftdiv");
+        leftdiv.innerHTML = elem.score1;
+
+        var rightdiv = document.createElement("div");
+        rightdiv.innerHTML = elem.score2;
+       
+        firstdiv.append(leftdiv, rightdiv);
+        var seconddiv = document.createElement("div");
+        seconddiv.setAttribute("class", "seconddiv");
+        var leftmostdiv = document.createElement("div");
+        leftmostdiv.setAttribute("class", "leftmostdiv");
+        leftmostdiv.innerHTML = elem.score3;
+
+        var rightmostdiv = document.createElement("div");
+        rightmostdiv.setAttribute("class", " rightmostdiv");
+        rightmostdiv.innerHTML = elem.score4;
+        seconddiv.append(leftmostdiv, rightmostdiv)
+        var para1 = document.createElement("p");
+        para1.setAttribute("class", "para")
+        para1.innerHTML = elem.headbelow;
+        var lastdiv = document.createElement("div");
+        lastdiv.setAttribute("class", "last");
+        var btn1 = document.createElement("button");
+        btn1.innerHTML = elem.button1;
+        var btn2 = document.createElement("button");
+        btn2.innerHTML = elem.button2;
+        lastdiv.append(btn1, btn2);
+
+        maindiv.append(heading, para, firstdiv, seconddiv, para1, lastdiv);
+        document.querySelector(".bodydata").append(maindiv)
+
+    })
+
+    window.addEventListener('resize', function(event){
+   
+   if(document.documentElement.clientWidth > 970)
+   {
+        window.location.href="./index.html"
+      }  
+});
+</script>
