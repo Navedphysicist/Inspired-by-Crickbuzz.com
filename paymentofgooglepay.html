@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment BY googlepay</title>
+    <link rel="stylesheet" href="./Styles/paymentofgooglepay.css">
+  </head>
+  <body>
+    <!-- Created a upper image part -->
+    <div class="upperimgcontainer">
+      <img  alt="Banner" src="https://secure.payu.in/StaticBannerAd?image=CiUBoo_header.png">
+    </div>
+    <!-- Created  a Big Container -->
+    <div class="container">
+      <!-- Created a left side container -->
+      <div class="leftcont">
+        <div class="back">
+            <div><img src="https://api.payu.in/public/assets/images/back.svg"  onclick="back()" alt="" />
+                <button id="backbutton" onclick="back()">Back</button>
+            </div>
+           
+          <img
+            id="crickimg"
+            src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Cricbuzz_Logo.png"
+            alt=""
+          />
+        </div>
+        <div class="afterback">
+          <p id="paymentptag">Enter Google Pay UPI ID</p>
+          <span id="totalpayable">Total Payable Amount</span>
+          <span id="pricevalue"></span>
+          <p id="transactionid">
+            Transaction Id: 6cc1aa40-627a-4813-8ec3-b1a42d8157b8
+          </p>
+        </div>
+        <div class="lastinleft">
+          Get upto Rs 500 Cashback when you pay using LazyPay on PayU Payment
+          Gateway. Valid once on min transaction of Rs 200.
+        </div>
+      </div>
+      <div class="rigthcont">
+        <div class="laguagebar">
+          
+            <span>UPI OPTIONS</span>
+            <select id="selecttag">
+                <option value="English">English</option>
+                <option value="Hindi">हिन्दी</option>
+                <option value="Gujrati">ગુજરાતી</option>
+                <option value="Urdu">اردو</option>
+            </select>
+      </div>
+      <div id="payoptions">
+          <form action="" id="form">
+            <div id="maindivofgooglepay">
+                <div id="oftag">
+                    <img src="https://api.payu.in/public/assets/images/upi-logos/upi2/Gpay.svg">
+                    <span>Google pay</span>
+                </div>
+              <div> <input type="text" id="googlepayid"  value="" placeholder="Enter UPI ID                                @okicici"/></div>
+               <input id="checkbox" type="checkbox" onclick="mychange()" /><span id="securityline">Save this option securely for faster payment</span>
+               <input type="submit" id="submit" value="VERIFY">
+            </div>
+          </form>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script src="./Script/paymentmethodgooglepay.js"></script>
+  
+
+  
+ 
+
+  
+
+  
+ 
