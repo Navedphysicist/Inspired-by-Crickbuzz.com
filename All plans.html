@@ -4,249 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      body {
-        height: 100%;
-        background-color: #e3e6e3;
-        font-family: "Open Sans", sans-serif;
-      }
-
-      .container {
-        width: 980px;
-        height: 48px;
-        margin: 0 auto;
-      }
-      .secondbox {
-        height: 438px;
-        background-image: linear-gradient(180deg, #02a57f, #06b2bd);
-        align-content: center;
-        display: flex;
-        justify-content: space-evenly;
-        padding: 30px;
-        box-sizing: border-box;
-        margin-top: 5px;
-        margin-bottom: -18px;
-      }
-      .thirdbox {
-        height: 280px;
-        width: 980px;
-        display: grid;
-        grid-template-rows: repeat(2, 125px);
-        grid-template-columns: repeat(3, 300px);
-        /* border: 1px solid red; */
-        gap: 10px;
-        justify-content: center;
-        align-items: center;
-        box-sizing: border-box;
-      }
-      .exclusivedeals {
-        margin-top: 10px;
-        font-size: 14px;
-        margin-bottom: 10px;
-        font-weight: 510;
-        text-transform: uppercase;
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        text-align: start;
-        padding-left: 5px;
-      }
-
-      #Andmany {
-        font: size 14px;
-        text-align: center;
-        color: gray;
-        line-height: 0px;
-      }
-      #selectplan {
-        text-align: center;
-        font-weight: bold;
-      }
-
-      .yellowtag {
-        background: #ffd361;
-        padding: 3px 12px;
-        border-bottom-right-radius: 20px;
-        font-size: 10px;
-        color: #000;
-
-       
-      }
-      #afteryellowtag {
-        display: flex;
-        padding-top:10px;
-      }
-      .textbold text h1 {
-        line-height: 42px;
-      }
-      h2 {
-        padding-top: 50px;
-        font-size: 24px;
-        margin: 0;
-        line-height: 30px;
-        width: 400px;
-      }
-      .thirdboximg {
-        border-radius: 5px;
-      }
-      .datain {
-        text-align: start;
-        /* border: 1px solid red; */
-        color: gray;
-        font-size: 12px;
-        padding: 5px;
-      }
-      #secondleft {
-        /* border: 1px solid red; */
-        height: 360px;
-        width: 490px;
-      }
-
-      #secondright {
-        /* border: 1px solid teal; */
-        height: 360px;
-        width: 490px;
-        padding: 20px 0px;
-        text-align: center;
-        box-sizing: border-box;
-      }
-
-      .plans-button {
-        width: 135.36px;
-        height: 32px;
-        padding: 8px 25px;
-        background: #fff;
-        border-radius: 18px;
-        border: 0;
-      }
-
-      #ele-underline {
-        font-size: 13px;
-      }
-
-      .aftersecondbox {
-        margin-top: 0px;
-        box-sizing: border-box;
-        background-color: #f5f5f5;
-      }
-
-      .aftersecondbox > h3 {
-        font-weight: bold;
-        text-align: center;
-        padding-top: 15px;
-      }
-
-      .aftersecondbox > div {
-        text-align: center;
-      }
-
-      #secondleft > p,
-      h2,
-      h1,
-      #learn {
-        color: #fff;
-      }
-
-      .thirdboxinsidefirst {
-        display: flex;
-        /* border: 1px solid red; */
-        background-color: #fff;
-        border-radius: 5px;
-      }
-
-      .unlockbuttons > .plans-button {
-        width: auto;
-      }
-      .unlockbuttons > .plans-button:nth-child(2) {
-        background-color: transparent;
-        /* border: 1px solid white; */
-      }
-
-      .logo {
-        height: 32px;
-        margin-top: 5px;
-        margin-left: 10px;
-        margin-right: 10px;
-      }
-
-      .nav {
-        height: 48px;
-        background-color: #009270;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0px 20px;
-      }
-
-      /* styling of select plan div  */
-
-      .container_of_select_plan_div {
-        display: grid;
-        grid-template-columns: repeat(3, 300px);
-        grid-template-rows:250px;
-        gap: 25px;
-        margin:auto;
-        justify-content: center;
-        /* border: 1px solid red; */
-      
-     
-      }
-
-      #ist_of_select_plan > span:not(#cut_price) {
-        font-size: 11px;
-        padding: 5px;
-        padding-right: 15px;
-        text-transform: uppercase;
-      }
-      #cut_price {
-        text-decoration: line-through;
-      }
-      #correct_price {
-        font-size: 28px;
-        font-weight: bold;
-      }
-
-      .insideselectplan {
-        background-color: #fff;
-        /* border: 1px solid red;; */
-        border-radius: 5px;
-       
-      }
-      .data_div_in_yellow {
-        font-size: 11.5px;
-        line-height: 200%;
-        margin-top: 25px;
-        background-color: #f5f5f5;
-        padding: 10px;
-      }
-      #thirdlastplan{
-        height: 78px;
-      }
-      
-      #checkboxiagree{
-        text-align: center;
-        font-size: 14px;
-
-      }
-      #submit{
-        background-color:#097;
-        color:#fff;
-        height:32px;
-        border:0px;
-        width:150px;
-        padding:5px;
-        border-radius: 5px;
-        margin-bottom:50px;
-      }
-
-      #submitparent{
-        margin:20px;
-        text-align: center;
-      
-      }
-    
-
-    
-    </style>
+    <title>All plans</title>
+    <link rel="stylesheet" href="./Styles/All plans.css" />
   </head>
   <body>
     <div class="container">
@@ -254,7 +13,7 @@
       <header>
         <nav class="nav">
           <img class="logo" src="https://www.cricbuzz.com/images/cb_logo.svg" />
-          <button class="plans-button">View all plans</button>
+          <button  onClick="document.getElementById('selectplan').scrollIntoView();" class="plans-button">View all plans</button>
         </nav>
       </header>
       <div class="secondbox">
@@ -269,7 +28,8 @@
             <button class="plans-button" id="learn">Learn more</button>
           </div>
           <p id="ele-underline">
-            By continuing you agree to Cancellation & Refund Policy
+            By continuing you agree to <a style="color:#fff" href="">Cancellation & Refund
+              Policy</a>
           </p>
         </div>
         <div id="secondright">
@@ -363,44 +123,47 @@
           </div>
         </div>
         <p id="Andmany">And many more upcoming amazing features</p>
-        <div style="color: gray">
-          ______________________________________________________________________________________________________________
+        <div style="color: rgb(197, 191, 191)">
+         ______________________________________________________________________________________________________________________________
         </div>
         <p id="selectplan">SELECT YOUR PLAN</p>
-        <form  id="form">
+        <form id="form">
           <div class="container_of_select_plan_div">
             <div class="selectplandiv">
               <div>
-                
-                  <div class="insideselectplan" id="firstplan">
-                    <span class="yellowtag"> Super Combo Deal</span>
-                    <div id="afteryellowtag">
-                      <input type="radio"  name="radio-group" id="plan1" onclick="plan(1)" />
-                      <div>
-                        <div id="ist_of_select_plan">
-                          <span>Cricbuzz Plus + Times Prime</span>
-                          <span>INR</span>
-                          <span id="cut_price">1249</span>
-                        </div>
-                        <div id="iind_of_select_plan">
-                          <span style="margin-right: 20px"
-                            ><b>1 Year Combo Plan</b></span
-                          >
-                          <span>INR</span>
-                          <span id="correct_price">999</span>
-                        </div>
+                <div class="insideselectplan" id="firstplan">
+                  <span class="yellowtag"> Super Combo Deal</span>
+                  <div id="afteryellowtag">
+                    <input
+                      type="radio"
+                      name="radio-group"
+                      id="plan1"
+                      onclick="plan(1)"
+                    
+                    />
+                    <div>
+                      <div id="ist_of_select_plan">
+                        <span>Cricbuzz Plus + Times Prime</span>
+                        <span>INR</span>
+                        <span id="cut_price">1249</span>
+                      </div>
+                      <div id="iind_of_select_plan">
+                        <span style="margin-right: 20px" 
+                          ><b>1 Year Combo Plan</b></span
+                        >
+                        <span>INR</span>
+                        <span id="correct_price">999</span>
                       </div>
                     </div>
                   </div>
-           
-               
-               
+                </div>
 
                 <div class="data_div_in_yellow">
                   Save more than INR 4000 with this combo plan. Get 1 year
                   subscription of Cricbuzz Plus and Times Prime. Get
                   complimentary access to SonyLIV, Zee5, Zomato Pro, Gaana+ &
-                  many more with Times Prime. View Full Details
+                  many more with Times Prime. 
+                  <a style="display:block" href="">View Full Details</a>
                 </div>
               </div>
             </div>
@@ -409,7 +172,12 @@
                 <div class="insideselectplan" id="secondplan">
                   <span class="yellowtag">Early Bird Offer</span>
                   <div id="afteryellowtag">
-                    <input type="radio"  name="radio-group" id="plan2" onclick="plan(2)" />
+                    <input
+                      type="radio"
+                      name="radio-group"
+                      id="plan2"
+                      onclick="plan(2)"
+                    />
                     <div>
                       <div id="ist_of_select_plan">
                         <span>CRICBUZZ PLUS</span>
@@ -417,14 +185,15 @@
                         <span id="cut_price">750</span>
                       </div>
                       <div id="iind_of_select_plan">
-                        <span style="margin-right: 30px"><b>1 Year Plan</b></span>
+                        <span style="margin-right: 30px"
+                          ><b>1 Year Plan</b></span
+                        >
                         <span>INR</span>
                         <span id="correct_price">500</span>
                       </div>
                     </div>
                   </div>
                 </div>
-               
 
                 <div class="data_div_in_yellow">
                   Get 1 year subscription of Cricbuzz Plus. And enjoy exclusive
@@ -434,10 +203,15 @@
             </div>
             <div class="selectplandiv">
               <div>
-                <div class="insideselectplan"  id="thirdlastplan">
+                <div class="insideselectplan" id="thirdlastplan">
                   <span style="color: #fff"></span>
                   <div id="afteryellowtag">
-                    <input type="radio"  name="radio-group" id="plan3" onclick="plan(3)" />
+                    <input
+                      type="radio"
+                      name="radio-group"
+                      id="plan3"
+                      onclick="plan(3)"
+                    />
                     <div>
                       <div id="ist_of_select_plan">
                         <span id="iiirdplan">CRICBUZZ PLUS</span>
@@ -454,7 +228,6 @@
                     </div>
                   </div>
                 </div>
-                
 
                 <div class="data_div_in_yellow">
                   Get 90 days of Cricbuzz Plus. And enjoy exclusive articles,
@@ -463,68 +236,16 @@
               </div>
             </div>
           </div>
-          <div id="checkboxiagree"><input type="checkbox"/>I agree with the Cancellation & Refund Policy of Cricbuzz</div>
-          <div id="submitparent"><input id="submit" type="submit" value="Continue to payment" /></div> 
+          <div id="checkboxiagree">
+            <input style=" cursor: pointer;" type="checkbox" onclick="mychange()" />I agree with the <a  href="">Cancellation & Refund
+              Policy</a> of Cricbuzz
+          </div>
+          <div id="submitparent">
+            <input id="submit" type="submit" value="Continue to payment" />
+          </div>
         </form>
       </div>
     </div>
   </body>
 </html>
-
-<script>
-
-var price=localStorage.getItem("price") || "" ;
-
- function plan(num)
- {   
-     document.querySelector("#thirdlastplan").style.background="#fff"
-     document.querySelector("#thirdlastplan").style.color="black"
-     document.querySelector("#secondplan").style.background="#fff"
-     document.querySelector("#secondplan").style.color="black"
-     document.querySelector("#firstplan").style.background="#fff"
-     document.querySelector("#firstplan").style.color="black"
-     
-
-   if(num==1)
-   {
-     console.log("hello 1");
-     document.querySelector("#firstplan").style.background="#097"
-     document.querySelector("#firstplan").style.color="#fff"
-      price=999;
-
-  
-
-
-   }
-   else if(num==2)
-   {
-     console.log("hello 2");
-     document.querySelector("#secondplan").style.background="#097"
-     document.querySelector("#secondplan").style.color="#fff"
-     price=500;
-    
-   }
-   else 
-   {
-     console.log("hello 3");
-     document.querySelector("#thirdlastplan").style.background="#097"
-     document.querySelector("#thirdlastplan").style.color="#fff"
-     price=250;
-
-     
-   }
- }
-
-document.querySelector("#form").addEventListener("submit",generate)
-
-function generate(event)
-{
-    event.preventDefault();
-    console.log("hello");
-    localStorage.setItem("price",price)
-    window.location.href="./payment.html"
-   
-}
- 
-</script>
-
+<script src="./Script/All plans.js"></script>
