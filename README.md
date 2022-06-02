@@ -40,12 +40,9 @@ Smooth Payment Page
 
 1.As every journey has some challenges and so was ours. Being a Team Leader I break the project into small Chunks and decided to distribute it according to the capability of an individual.I list out some of the milestones in the project that will help us to learn something different.
 
-
 2.We faced some problems during merging the files but we figured it out very quickly and start following the basic steps of merging.
 
-
 3. We faced challenges with CSS tags like absolute and relative. Some of the files got dull CSS so we changed some classes and tags and build an eye catching UI.
-
 
 4. One of the Challenge is to give best user input OTP experience.We want to make the user Input Process Smooth as well effective.We used Javascript to fullfilll this need.
 
