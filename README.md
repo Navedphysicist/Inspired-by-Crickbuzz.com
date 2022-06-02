@@ -38,7 +38,7 @@ Smooth Payment Page
 
 ## Challenges
 
-1.As every journey has some challenges and so was ours. Being a Team Leader I break the project into small Chunks and decided to distribute it according to the capability of an individual.I list out some of the milestones in the project that will help us to learn something different.
+1.As every journey has some challenges and so was ours. Being a Team Leader I break the project into small Chunks and decided to distribute it according to the  capability of an individual.I list out some of the milestones in the project that will help us to learn something different.
 
 2.We faced some problems during merging the files but we figured it out very quickly and start following the basic steps of merging.
 
