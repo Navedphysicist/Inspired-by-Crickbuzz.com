@@ -32,9 +32,9 @@ Smooth Payment Page
 
 ![Screenshot](https://cdn-images-1.medium.com/max/800/1*gBPL7wGOp2nPn682KLPDhA.png)
 
-![Screenshot ](blob:https://medium.com/191fc0ea-1bf4-4a62-876a-2514e2af69ee)
+![Screenshot ](https://cdn-images-1.medium.com/max/800/1*hVndxXbHWGsB-dm7oZSrQg.png)
 
-![Screenshot](blob:https://medium.com/9ef3e867-b367-4061-ba29-96c18ac7d4f3)
+![Screenshot](https://cdn-images-1.medium.com/max/800/1*WIXnmuTOoTAfZpmfj_oP0g.png)
 
 ## Challenges
 
